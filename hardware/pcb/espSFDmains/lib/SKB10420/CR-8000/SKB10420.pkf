@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "SKB10420"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "SKB10420")
+        (spec "default")
+    )
+)
