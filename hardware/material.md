@@ -2,14 +2,17 @@
 ### Trafo
 - 1x  123-4044       75,22 €  
   RS PRO Ringkerntransformator, Primär 2 x 115V ac / Sekundär 2 x 45V ac, 500VA 2 Ausg. 3.5kg 136 (Dia.) x 60mm 60Hz 50Hz
-- 2x  671-9218        1,367 €  (VPE à 10)  
+- 1x  671-9218        1,367 €  (VPE à 10)  
   RS PRO Transformatorzubehör Neoprenscheibe für Ringkerntransformator
-- 2x  671-9205        0,743 €  (VPE à 10)  
+- 1x  671-9205        0,743 €  (VPE à 10)  
   RS PRO Transformatorzubehör Montagescheibe für Ringkerntransformator
 ### Platine
 - 1x  PCB             0,50 €  (à 10 at JLPCB)
 - 1x  177-0172       44,10 €  
   TRACOPOWER Schaltnetzteil, AUS 9V dc / 1.67A 15W, EIN 120 → 370 V dc, 85 → 264 V ac Geschlossen
+- 1x  181-2116        9,96 €  
+  RS PRO Schaltnetzteil, AUS 9V dc / 1.1A 10W, EIN 100 → 370 V dc, 85 → 264 V ac Gekapselt, PCB-Montage  
+  (Alternative zu 177-0172)
 - 1x  666-4379        6,69 €  
   TRACOPOWER TSR 1 Schaltregler, Eingang 6.5 → 36V dc / Ausgang 5V dc, 1 Ausg., 5W, 1A, Durchsteckmontage
 - 2x  769-0155        0,752 €  
