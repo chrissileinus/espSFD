@@ -1,4 +1,7 @@
 (sym_lib_table
   (version 7)
-  (lib (name "SKB10420")(type "KiCad")(uri "${KIPRJMOD}/lib/SKB10420/KiCad/SKB10420.kicad_sym")(options "")(descr ""))
+  (lib (name "LS10-13B09R3")(type "KiCad")(uri "${KIPRJMOD}/lib/LS10-13B09R3.kicad_sym")(options "")(descr ""))
+  (lib (name "PSK-15B-S9")(type "Legacy")(uri "${KIPRJMOD}/lib/PSK-15B-S9.lib")(options "")(descr ""))
+  (lib (name "SKB10420")(type "KiCad")(uri "${KIPRJMOD}/lib/SKB10420.kicad_sym")(options "")(descr ""))
+  (lib (name "CPC40055ST")(type "KiCad")(uri "${KIPRJMOD}/lib/CPC40055ST.kicad_sym")(options "")(descr ""))
 )

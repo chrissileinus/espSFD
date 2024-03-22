@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP SKB10420
-D Solid State Relay PC Pin PCB Mount, Zero Cross, 5 A, 10 V dc
-K
-F https://docs.rs-online.com/64f5/0900766b81728a71.pdf
-$ENDCMP
-#
-#End Doc Library

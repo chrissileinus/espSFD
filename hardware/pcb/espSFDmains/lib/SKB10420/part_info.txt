@@ -1,9 +1,0 @@
-Manufacturer=Celduc
-PartNumber=SKB10420
-PartCategory=Relay or Contactor
-PackageCategory=Other
-PinCount=4
-Version=1.8
-Released=2021-07-12 08:43:51
-Downloaded=2024-01-25 08:31:39
-3D=Y
