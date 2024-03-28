@@ -22,22 +22,18 @@
 ### Trafo switching:
 - 1x  CLA411-ND      19,21 €  
   [IXYS CPC40055ST SSR RELAY SPST-NO 5A 0-800V](https://www.digikey.de/de/products/detail/ixys-integrated-circuits-division/CPC40055ST/4785448)
-- 1x  BS170-ND        0,38 €  
-  [onsemi BS170 N-Kanal, THT MOSFET 60 V / 500 mA 830 mW, 3-Pin TO-92](https://www.digikey.de/de/products/detail/onsemi/BS170/244280)
 ### Connectors:
 - 2x  277-1106-ND     0,54 €  
   [Phoenix Contact MSTBA 2.5/ 2-G-5.08 Steckbarer Klemmenblock Header 2-Kontakte 5.08mm-Raster gewinkelt](https://www.digikey.de/de/products/detail/phoenix-contact/1757242/260474)
 - 2x  277-1011-ND     1,43 €  
   [Phoenix Contact MSTB 2.5/2-5.08 Steckbarer Klemmenblock Steckverbinder 2-Kontakte 5.08mm-Raster Gerade](https://www.digikey.de/de/products/detail/phoenix-contact/1757019/260379)
-- 1x  277-1210-ND     1,75 €  
-  [Phoenix Contact MC 1.5/ 6-G-3.81 Steckbarer Klemmenblock Header 6-Kontakte 3.81mm-Raster gewinkelt](https://www.digikey.de/de/products/detail/phoenix-contact/1803316/260578)
-- 1x  277-1165-ND     5,52 €  
-  [Phoenix Contact MC 1.5/ 6-ST-3.81 Steckbarer Klemmenblock Steckverbinder 6-Kontakte 3.81mm-Raster Gerade](https://www.digikey.de/de/products/detail/phoenix-contact/1803617/260533)
+- 1x  277-1208-ND     1,75 €  
+  [Phoenix Contact MC 1.5/ 4-G-3.81 Steckbarer Klemmenblock Header 4-Kontakte 3.81mm-Raster gewinkelt](https://www.digikey.de/de/products/detail/phoenix-contact/1803293/260576)
+- 1x  277-1163-ND     4,02 €  
+  [Phoenix Contact MC 1.5/ 4-ST-3.81 Steckbarer Klemmenblock Steckverbinder 4-Kontakte 3.81mm-Raster Gerade](https://www.digikey.de/de/products/detail/phoenix-contact/1803594/260531)
 ### Passives:
-- 1x  148-326         0,068 €  
-  Metallschicht Widerstand 180Ω ±1% / 0.6W
-- 1x  148-562         0,06 €  
-  Metallschicht Widerstand 1.8kΩ ±1% / 0.6W
+- 1x  BC3444CT-ND     0,10 €  
+  [Metallschicht Widerstand 100Ω ±1% / 0.4W](https://www.digikey.de/de/products/detail/vishay-beyschlag-draloric-bc-components/MBA02040C1000FCT00/5062182)
 
 
 ### Optional:
