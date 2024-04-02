@@ -23,14 +23,10 @@
 - 1x  CLA411-ND      19,21 €  
   [IXYS CPC40055ST SSR RELAY SPST-NO 5A 0-800V](https://www.digikey.de/de/products/detail/ixys-integrated-circuits-division/CPC40055ST/4785448)
 ### Connectors:
-- 2x  277-1106-ND     0,54 €  
-  [Phoenix Contact MSTBA 2.5/ 2-G-5.08 Steckbarer Klemmenblock Header 2-Kontakte 5.08mm-Raster gewinkelt](https://www.digikey.de/de/products/detail/phoenix-contact/1757242/260474)
-- 2x  277-1011-ND     1,43 €  
-  [Phoenix Contact MSTB 2.5/2-5.08 Steckbarer Klemmenblock Steckverbinder 2-Kontakte 5.08mm-Raster Gerade](https://www.digikey.de/de/products/detail/phoenix-contact/1757019/260379)
-- 1x  277-1208-ND     1,75 €  
-  [Phoenix Contact MC 1.5/ 4-G-3.81 Steckbarer Klemmenblock Header 4-Kontakte 3.81mm-Raster gewinkelt](https://www.digikey.de/de/products/detail/phoenix-contact/1803293/260576)
-- 1x  277-1163-ND     4,02 €  
-  [Phoenix Contact MC 1.5/ 4-ST-3.81 Steckbarer Klemmenblock Steckverbinder 4-Kontakte 3.81mm-Raster Gerade](https://www.digikey.de/de/products/detail/phoenix-contact/1803594/260531)
+- 4x  277-1208-ND     0,7 €  
+  [Phoenix Contact MC 1.5/ 2-G-3.81 Steckbarer Klemmenblock Header 2-Kontakte 3.81mm-Raster gewinkelt](https://www.digikey.de/de/products/detail/phoenix-contact/1803277/260574)
+- 4x  277-1163-ND     4,02 €  
+  [Phoenix Contact MC 1.5/ 2-ST-3.81 Steckbarer Klemmenblock Steckverbinder 2-Kontakte 3.81mm-Raster Gerade](https://www.digikey.de/de/products/detail/phoenix-contact/1803578/260529)
 ### Passives:
 - 1x  BC3444CT-ND     0,10 €  
   [Metallschicht Widerstand 100Ω ±1% / 0.4W](https://www.digikey.de/de/products/detail/vishay-beyschlag-draloric-bc-components/MBA02040C1000FCT00/5062182)
