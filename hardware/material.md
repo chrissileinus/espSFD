@@ -9,7 +9,7 @@
 
 ## Voelkner
 ### Trafo switching:
-- 1x  CLA411-ND       19,21 €  
+- 1x  CX240D5         21,35 €
   [Crydom Halbleiterrelais CX240D5 5A Schaltspannung (max.): 280 V/AC Nullspannungsschaltend](https://www.voelkner.de/products/154687/Crydom-Halbleiterrelais-CX240D5-5A-Schaltspannung-max.-280-V-AC-Nullspannungsschaltend-1St..html)
 
 
