@@ -7,7 +7,7 @@
 ## JLPCB
 - 1x  PCB              0,50 €  (à 10 at JLPCB)
 
-## Farnell
+## Voelkner
 ### Trafo switching:
 - 1x  CLA411-ND       19,21 €  
   [Crydom Halbleiterrelais CX240D5 5A Schaltspannung (max.): 280 V/AC Nullspannungsschaltend](https://www.voelkner.de/products/154687/Crydom-Halbleiterrelais-CX240D5-5A-Schaltspannung-max.-280-V-AC-Nullspannungsschaltend-1St..html)
