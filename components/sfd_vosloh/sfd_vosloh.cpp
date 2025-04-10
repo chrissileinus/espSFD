@@ -75,26 +75,14 @@ namespace esphome
     }
 
     // update
-    void sfdVosloh::update_last_module()
-    {
-      int last_pos = 0;
-      for (int pos = 1; pos <= this->POSITION_MAX; pos++)
-      {
-        if (this->get_character(pos) != 0x00)
-        {
-          last_pos = pos;
-        }
-      }
-
-      this->last_module->publish_state(last_pos);
-    }
-
     void sfdVosloh::update_current_content()
     {
+      if (this->current_content == nullptr) return;
+
       std::string str = "";
       bool rolling = false;
 
-      for (int pos = 1; pos <= this->last_module->get_state(); pos++)
+      for (int pos = 1; pos <= this->last_module; pos++)
       {
         char character = this->get_character(pos);
 
@@ -118,7 +106,7 @@ namespace esphome
           break;
         }
       }
-
+      
       this->current_content->publish_state(str);
     }
 
@@ -128,7 +116,7 @@ namespace esphome
       std::string c_str = "";
       std::string m_str = "";
 
-      for (int pos = 1; pos <= this->last_module->get_state(); pos++)
+      for (int pos = 1; pos <= this->last_module; pos++)
       {
         uint8_t state = this->get_state(pos);
         uint8_t c_state = state | 0x0F;
@@ -180,12 +168,14 @@ namespace esphome
         }
       }
 
-      this->current_c_state->publish_state(c_str);
-      this->current_m_state->publish_state(m_str);
+      if (this->current_c_state != nullptr)
+        this->current_c_state->publish_state(c_str);
+      if (this->current_m_state != nullptr)
+        this->current_m_state->publish_state(m_str);
 
       if (!rolling)
       {
-        this->rolling->publish_state(false);
+        this->set_rolling(false);
       }
     }
 
@@ -193,14 +183,12 @@ namespace esphome
     // setup
     void sfdVosloh::setup()
     {
-      this->update_last_module();
       this->roll();
     }
     void sfdVosloh::dump_config()
     {
       ESP_LOGCONFIG(TAG, "row length: %3d", this->row_length);
-      ESP_LOGCONFIG(TAG, "last module: %3d", (int)this->last_module->get_state());
-      ESP_LOGCONFIG(TAG, "current content: \"%s\"", this->current_content->get_state().c_str());
+      ESP_LOGCONFIG(TAG, "last module: %3d", this->last_module);
     }
 
     void sfdVosloh::loop()
@@ -209,7 +197,7 @@ namespace esphome
 
       int loop_counter_end = 1000;
 
-      if (this->rolling->state == true)
+      if (this->rolling_ == true)
       {
         loop_counter_end = 10;
       }
@@ -230,7 +218,7 @@ namespace esphome
       this->blocked++;
 
       ESP_LOGD(TAG, "[roll]:");
-      this->rolling->publish_state(true);
+      this->set_rolling(true);
       delay_microseconds_safe(1000);
       this->parent_->write_byte(_ROLL);
       this->current_position = 1;
@@ -241,7 +229,7 @@ namespace esphome
     }
     void sfdVosloh::adapt()
     {
-      this->rolling->publish_state(true);
+      this->set_rolling(true);
       delay_microseconds_safe(1000);
       this->parent_->write_byte(_ADAPT);
       this->update_current_content();
@@ -250,7 +238,7 @@ namespace esphome
     {
       this->blocked++;
 
-      for (int pos = 1; pos <= this->last_module->get_state(); pos++)
+      for (int pos = 1; pos <= this->last_module; pos++)
       {
         this->set_character(' ', pos);
       }

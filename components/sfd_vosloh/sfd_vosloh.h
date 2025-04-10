@@ -24,7 +24,7 @@ namespace esphome
     {
     protected:
       const uint8_t POSITION_MAX = 127;
-      const uint8_t UART_TIMEOUT = 20;
+      const uint8_t UART_TIMEOUT = 5;
 
       const uint8_t _WRITE = 0x88;
       const uint8_t _READ = 0x85;
@@ -33,14 +33,16 @@ namespace esphome
       const uint8_t _ROLL = 0x82;
 
       int row_length = this->POSITION_MAX;
+      int last_module = this->POSITION_MAX;
       int current_position = 1;
       int blocked = 0;
       int loop_counter = 0;
 
+      bool rolling_ = false;
+
       text_sensor::TextSensor *current_content;
       text_sensor::TextSensor *current_c_state;
       text_sensor::TextSensor *current_m_state;
-      sensor::Sensor *last_module;
       binary_sensor::BinarySensor *rolling;
 
       bool set_string(std::string string, uint8_t position);
@@ -50,9 +52,14 @@ namespace esphome
       uint8_t get_state(uint8_t position);
       uint8_t collect_respond();
 
-      void update_last_module();
       void update_current_content();
       void update_current_state();
+      void set_rolling(bool rolling)
+      {
+        this->rolling_ = rolling;
+        if (this->rolling != nullptr)
+          this->rolling->publish_state(rolling);
+      }
 
       // helper
 
@@ -69,10 +76,10 @@ namespace esphome
 
     public:
       void setup_row_length(uint8_t length) { this->row_length = length; }
+      void setup_last_module(uint8_t length) { this->last_module = length; }
       void setup_current_content(text_sensor::TextSensor *sensor) { this->current_content = sensor; }
       void setup_current_c_state(text_sensor::TextSensor *sensor) { this->current_c_state = sensor; }
       void setup_current_m_state(text_sensor::TextSensor *sensor) { this->current_m_state = sensor; }
-      void setup_last_module(sensor::Sensor *sensor) { this->last_module = sensor; }
       void setup_rolling(binary_sensor::BinarySensor *sensor) { this->rolling = sensor; }
 
       void setup() override;
