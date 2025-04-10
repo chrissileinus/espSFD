@@ -24,7 +24,7 @@ namespace esphome
     {
     protected:
       const uint8_t POSITION_MAX = 127;
-      const uint8_t UART_TIMEOUT = 5;
+      const uint8_t UART_TIMEOUT = 20;
 
       const uint8_t _WRITE = 0x88;
       const uint8_t _READ = 0x85;
