@@ -6,7 +6,7 @@ from esphome.const import CONF_ID
 AUTO_LOAD = ["text_sensor", "sensor", "binary_sensor"]
 DEPENDENCIES = ['uart']
 
-sfd_vosloh_ns = cg.esphome_ns.namespace('sfd_vosloh')
+sfd_vosloh_ns = cg.esphome_ns.namespace('sfd_vosloh_react')
 sfdVosloh = sfd_vosloh_ns.class_('sfdVosloh', cg.Component, uart.UARTDevice)
 
 CONF_ROW_LENGTH = "row_length"
