@@ -30,6 +30,7 @@ fp-lib-table
 *.csv
 
 prod
+production
 *.gbr
 *.drl
 *.gbrjob
