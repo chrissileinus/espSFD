@@ -5,4 +5,5 @@
   (lib (name "SKB10420")(type "KiCad")(uri "${KIPRJMOD}/lib/SKB10420.kicad_sym")(options "")(descr ""))
   (lib (name "CPC40055ST")(type "KiCad")(uri "${KIPRJMOD}/lib/CPC40055ST.kicad_sym")(options "")(descr ""))
   (lib (name "esp32-wemos-d1-mini")(type "KiCad")(uri "${KIPRJMOD}/lib/esp32-wemos-d1-mini.kicad_sym")(options "")(descr ""))
+  (lib (name "ESP32-S3-ZERO")(type "KiCad")(uri "${KIPRJMOD}/lib/ESP32-S3-ZERO.kicad_sym")(options "")(descr ""))
 )
