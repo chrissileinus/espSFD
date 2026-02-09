@@ -5558,7 +5558,7 @@
 	)
 	(global_label "D4/RX1"
 		(shape input)
-		(at 240.03 142.24 180)
+		(at 240.03 139.7 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5568,7 +5568,7 @@
 		)
 		(uuid "1bcad48b-ad93-498c-8e8a-8e856ba3e81a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.5458 142.24 0)
+			(at 229.5458 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5622,9 +5622,31 @@
 			)
 		)
 	)
+	(global_label "Enable UART"
+		(shape bidirectional)
+		(at 118.11 191.77 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2b17fc28-3cf6-40f2-a6c3-d065425e081b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 102.0394 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "D5"
 		(shape input)
-		(at 240.03 158.75 180)
+		(at 240.03 161.29 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5634,7 +5656,7 @@
 		)
 		(uuid "30cd88d2-0bc8-422f-9527-cb8f5fc3c2c0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 234.5653 158.75 0)
+			(at 234.5653 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5866,7 +5888,7 @@
 	)
 	(global_label "Motor N"
 		(shape output)
-		(at 72.39 30.48 270)
+		(at 78.74 30.48 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5876,7 +5898,7 @@
 		)
 		(uuid "5d4f165c-6b09-4c23-8547-4494503b0cc0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 72.39 41.0246 90)
+			(at 78.74 41.0246 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5888,7 +5910,7 @@
 	)
 	(global_label "D3/TX1"
 		(shape input)
-		(at 240.03 139.7 180)
+		(at 240.03 142.24 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5898,7 +5920,7 @@
 		)
 		(uuid "5eca4b47-1000-4d42-8493-ac3b1ef182c6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.8482 139.7 0)
+			(at 229.8482 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5976,7 +5998,7 @@
 	)
 	(global_label "D2{slash}SDA"
 		(shape input)
-		(at 240.03 123.19 180)
+		(at 240.03 120.65 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5986,7 +6008,7 @@
 		)
 		(uuid "75c74669-229b-41f1-883d-0d6dc47af7ff")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.6667 123.19 0)
+			(at 229.6667 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6130,7 +6152,7 @@
 	)
 	(global_label "D1{slash}SCL"
 		(shape input)
-		(at 240.03 120.65 180)
+		(at 240.03 123.19 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6140,7 +6162,7 @@
 		)
 		(uuid "aeb8574a-bfc8-49b5-a5d8-5a5000f92ed3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 229.7272 120.65 0)
+			(at 229.7272 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6304,6 +6326,28 @@
 			)
 		)
 	)
+	(global_label "OE"
+		(shape input)
+		(at 123.19 195.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d68946bd-5560-428c-9e91-670c10e13a8b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 128.6547 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "TX Selected"
 		(shape input)
 		(at 170.18 151.13 0)
@@ -6350,7 +6394,7 @@
 	)
 	(global_label "D6"
 		(shape input)
-		(at 240.03 161.29 180)
+		(at 240.03 158.75 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6360,7 +6404,7 @@
 		)
 		(uuid "dcd6f162-50be-4fe1-a84a-c5a70d584574")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 234.5653 161.29 0)
+			(at 234.5653 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6370,7 +6414,7 @@
 			)
 		)
 	)
-	(global_label "Enable UART"
+	(global_label "OE"
 		(shape input)
 		(at 170.18 140.97 0)
 		(fields_autoplaced yes)
@@ -6382,7 +6426,7 @@
 		)
 		(uuid "de2ef52f-3fb0-4f9e-9625-a91eb76a74a1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 185.1393 140.97 0)
+			(at 175.6447 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6416,7 +6460,7 @@
 	)
 	(global_label "Motor L"
 		(shape output)
-		(at 77.47 30.48 270)
+		(at 73.66 30.48 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6426,7 +6470,7 @@
 		)
 		(uuid "e22147a8-5f77-4d20-94e4-71bb84612058")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.47 40.7222 90)
+			(at 73.66 40.7222 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10382,6 +10426,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:SolderJumper_3_Open")
+		(at 123.19 191.77 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9cdd2bd3-d68d-4465-8ea1-24168ddbdf20")
+		(property "Reference" "JP5"
+			(at 123.19 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RX Select"
+			(at 123.19 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm"
+			(at 123.19 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 123.19 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "2af9baa5-8150-429b-b2e7-ad2cc8871ca7")
+		)
+		(pin "2"
+			(uuid "7e7bbd2d-cc6c-4111-879b-19b2e570d6f8")
+		)
+		(pin "1"
+			(uuid "3c178a09-bcf4-4fa0-b067-753e89569eb7")
+		)
+		(instances
+			(project "espSFDmains"
+				(path "/b4f72b7f-c57f-4eed-9610-6133338117bb"
+					(reference "JP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_TVS")
 		(at 267.97 130.81 0)
 		(unit 1)
@@ -11545,6 +11660,74 @@
 			(project "espSFDmains"
 				(path "/b4f72b7f-c57f-4eed-9610-6133338117bb"
 					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 128.27 191.77 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d0748aed-7233-4943-b1c5-388c95743f91")
+		(property "Reference" "#PWR041"
+			(at 124.46 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 132.08 191.7699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 128.27 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 128.27 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ed28a511-5b09-49f6-9450-c0859a532b6d")
+		)
+		(instances
+			(project "espSFDmains"
+				(path "/b4f72b7f-c57f-4eed-9610-6133338117bb"
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
