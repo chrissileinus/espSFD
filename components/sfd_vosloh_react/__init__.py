@@ -4,6 +4,7 @@ from esphome.components import uart, text_sensor, sensor, binary_sensor
 from esphome.const import CONF_ID
 
 AUTO_LOAD = ["text_sensor", "sensor", "binary_sensor"]
+CODEOWNERS = ["@chrissileinus"]
 DEPENDENCIES = ['uart']
 
 sfd_vosloh_ns = cg.esphome_ns.namespace('sfd_vosloh_react')

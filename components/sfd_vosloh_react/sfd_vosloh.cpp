@@ -273,7 +273,7 @@ namespace esphome
       if (row < 1)
         row = 1;
 
-      ESP_LOGD(TA<G, "[set_content] row: %2d input: %s", row, input.c_str());
+      ESP_LOGD(TAG, "[set_content] row: %2d input: %s", row, input.c_str());
 
       if (!(mode & OVERWRITE))
       {
