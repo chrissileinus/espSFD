@@ -3888,7 +3888,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:NCP1117-3.3_SOT223"
+		(symbol "Regulator_Linear:NCP1117-5.0_SOT223"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3900,7 +3900,7 @@
 					)
 				)
 			)
-			(property "Value" "NCP1117-3.3_SOT223"
+			(property "Value" "NCP1117-5.0_SOT223"
 				(at 0 3.175 0)
 				(effects
 					(font
@@ -3927,7 +3927,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "1A Low drop-out regulator, Fixed Output 3.3V, SOT-223"
+			(property "Description" "1A Low drop-out regulator, Fixed Output 5V, SOT-223"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3936,7 +3936,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "REGULATOR LDO 3.3V"
+			(property "ki_keywords" "REGULATOR LDO 5V"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3954,7 +3954,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "NCP1117-3.3_SOT223_0_1"
+			(symbol "NCP1117-5.0_SOT223_0_1"
 				(rectangle
 					(start -5.08 -5.08)
 					(end 5.08 1.905)
@@ -3967,7 +3967,7 @@
 					)
 				)
 			)
-			(symbol "NCP1117-3.3_SOT223_1_1"
+			(symbol "NCP1117-5.0_SOT223_1_1"
 				(pin power_in line
 					(at -7.62 0 0)
 					(length 2.54)
@@ -4025,10 +4025,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Switching:LM2675N-5"
-			(pin_names
-				(offset 1.016)
-			)
+		(symbol "Regulator_Switching:LM2675M-3.3"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -4041,7 +4038,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "LM2675N-5"
+			(property "Value" "LM2675M-3.3"
 				(at 0 8.89 0)
 				(effects
 					(font
@@ -4050,7 +4047,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 				(at 1.27 -8.89 0)
 				(effects
 					(font
@@ -4070,7 +4067,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "5V, 1A Step-Down Voltage Regulator, DIP-8"
+			(property "Description" "3.3V, 1A Step-Down Voltage Regulator, SO-8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4079,7 +4076,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Step-Down Voltage Regulator 5V 1A"
+			(property "ki_keywords" "Step-Down Voltage Regulator 3.3V 1A"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4088,7 +4085,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "DIP*W7.62mm*"
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4097,7 +4094,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "LM2675N-5_0_1"
+			(symbol "LM2675M-3.3_0_1"
 				(rectangle
 					(start -10.16 7.62)
 					(end 10.16 -7.62)
@@ -4110,7 +4107,7 @@
 					)
 				)
 			)
-			(symbol "LM2675N-5_1_1"
+			(symbol "LM2675M-3.3_1_1"
 				(pin power_in line
 					(at -12.7 5.08 0)
 					(length 2.54)
@@ -5081,7 +5078,7 @@
 		(at 91.44 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e15c25db-6b5c-4d33-9b47-283b82ec1d0e")
+		(uuid "e71d304f-702d-4ba9-913d-1c08a0ce2ab0")
 	)
 	(junction
 		(at 110.49 44.45)
@@ -6957,74 +6954,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 80.01 116.84 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0245b9e3-8011-4bea-aa2a-eeb8b5a9ec1a")
-		(property "Reference" "#PWR055"
-			(at 76.2 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 83.82 116.8399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 80.01 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 80.01 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 80.01 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3700994b-fbf9-47b0-bbd7-f76e62f2ef7b")
-		)
-		(instances
-			(project "espSFDmains"
-				(path "/b4f72b7f-c57f-4eed-9610-6133338117bb"
-					(reference "#PWR055")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D_TVS")
 		(at 267.97 151.13 0)
 		(unit 1)
@@ -7802,35 +7731,44 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 53.34 116.84 90)
+		(lib_id "Regulator_Switching:LM2675M-3.3")
+		(at 52.07 146.05 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2a75e098-5d9b-44d5-bec3-8ca17600fe3b")
-		(property "Reference" "#PWR056"
-			(at 57.15 116.84 0)
+		(uuid "2e98fc7b-91b6-43f7-9b64-67d62d858ff1")
+		(property "Reference" "U2"
+			(at 52.07 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 49.53 116.8399 90)
+		(property "Value" "LM2675M-3.3"
+			(at 52.07 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 53.34 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Footprint" ""
-			(at 53.34 116.84 0)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2675.pdf"
+			(at 52.07 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7838,8 +7776,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 53.34 116.84 0)
+		(property "Description" "3.3V, 1A Step-Down Voltage Regulator, SO-8"
+			(at 52.07 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7847,22 +7785,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 53.34 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "3"
+			(uuid "c66bddcc-463c-454f-9e8f-c2add708a7da")
+		)
+		(pin "2"
+			(uuid "26b8955e-2a79-4ece-9816-a3601418d7bd")
 		)
 		(pin "1"
-			(uuid "c3323b34-293f-4ba1-907c-a09fecfa8d00")
+			(uuid "48859bf5-3dc8-4155-8ecb-25f24b0426b6")
+		)
+		(pin "4"
+			(uuid "8d58c0f2-dd3e-4d87-a45b-4b2fc071926a")
+		)
+		(pin "6"
+			(uuid "66693366-48e6-4abf-a460-e4e3b36ae142")
+		)
+		(pin "8"
+			(uuid "73d74e1b-d24c-4f2d-bbb2-61e4cc95b1d1")
+		)
+		(pin "7"
+			(uuid "9ed07e6d-2120-4fdd-918d-3eb386ab56ab")
+		)
+		(pin "5"
+			(uuid "c56a4f67-372a-4ee4-a200-f0f021b5db14")
 		)
 		(instances
-			(project "espSFDmains"
+			(project ""
 				(path "/b4f72b7f-c57f-4eed-9610-6133338117bb"
-					(reference "#PWR056")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -8326,17 +8276,18 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 109.22 151.13 0)
+		(lib_id "power:+3.3V")
+		(at 91.44 140.97 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3c8fc041-e2f6-4b15-bcaf-f11ea3f2a6a2")
-		(property "Reference" "#PWR049"
-			(at 109.22 154.94 0)
+		(uuid "3d51f8d9-61c6-443f-8e70-06dfabed391e")
+		(property "Reference" "#PWR042"
+			(at 91.44 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8344,8 +8295,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 109.22 146.05 0)
+		(property "Value" "+3.3V"
+			(at 91.44 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8353,7 +8304,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 109.22 151.13 0)
+			(at 91.44 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8362,7 +8313,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 151.13 0)
+			(at 91.44 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8370,8 +8321,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 109.22 151.13 0)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 91.44 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8380,83 +8331,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "b5d96bf8-fea4-42cf-b7b5-669408b49d9c")
+			(uuid "8e41d1b4-8acf-4e9b-94e3-8f2814fab221")
 		)
 		(instances
 			(project "espSFDmains"
 				(path "/b4f72b7f-c57f-4eed-9610-6133338117bb"
-					(reference "#PWR049")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:NCP1117-3.3_SOT223")
-		(at 60.96 116.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4429f523-5e8e-4d1d-a327-018601c77a4a")
-		(property "Reference" "U4"
-			(at 60.96 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NCP1117-3.3_SOT223"
-			(at 60.96 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 60.96 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF"
-			(at 63.5 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1A Low drop-out regulator, Fixed Output 3.3V, SOT-223"
-			(at 60.96 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5907dbcb-f4a4-49f5-b8f2-7ceef8839921")
-		)
-		(pin "3"
-			(uuid "3f55db8c-642b-4b6c-a0cb-800201c8e1a5")
-		)
-		(pin "1"
-			(uuid "62c57b17-07bc-4003-925f-49478c81cba5")
-		)
-		(instances
-			(project ""
-				(path "/b4f72b7f-c57f-4eed-9610-6133338117bb"
-					(reference "U4")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -8911,103 +8791,6 @@
 			(project "espSFDmains"
 				(path "/b4f72b7f-c57f-4eed-9610-6133338117bb"
 					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Switching:LM2675N-5")
-		(at 52.07 146.05 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "52de2ac4-0ea5-45d9-9760-36791869547c")
-		(property "Reference" "U2"
-			(at 52.07 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM2675N-5"
-			(at 52.07 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 53.34 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2675.pdf"
-			(at 52.07 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "5V, 1A Step-Down Voltage Regulator, SOIC-8"
-			(at 52.07 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part #" "C123126"
-			(at 52.07 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "e1749100-1d29-4e92-a67d-a06ef1b1a393")
-		)
-		(pin "1"
-			(uuid "aafad6c8-b3aa-48b2-8bec-b50b1d3a6f59")
-		)
-		(pin "4"
-			(uuid "76e4f11c-143b-4da5-bd18-6c05da6d4f39")
-		)
-		(pin "3"
-			(uuid "d69a9399-1f77-417f-bea5-111b1d25d37d")
-		)
-		(pin "6"
-			(uuid "e0426a41-5607-4ba4-859f-20c750130118")
-		)
-		(pin "7"
-			(uuid "63de0d51-0cba-42a5-9fa2-74dc4a6eddc9")
-		)
-		(pin "2"
-			(uuid "6f4c508d-8dbe-4679-bb77-47e3a914aba4")
-		)
-		(pin "8"
-			(uuid "dea3a3a4-37e5-4e9c-8f70-bb988d59be1e")
-		)
-		(instances
-			(project "espSFDmains"
-				(path "/b4f72b7f-c57f-4eed-9610-6133338117bb"
-					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -9886,72 +9669,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 91.44 140.97 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6cbe11dd-e10d-4912-8600-4eb8f371dc26")
-		(property "Reference" "#PWR042"
-			(at 91.44 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 91.44 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 91.44 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 91.44 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 91.44 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7f5c138b-06fd-4cfb-87fc-665ea77dff71")
-		)
-		(instances
-			(project "espSFDmains"
-				(path "/b4f72b7f-c57f-4eed-9610-6133338117bb"
-					(reference "#PWR042")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 73.66 158.75 0)
 		(mirror y)
@@ -10374,72 +10091,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+9V")
-		(at 24.13 173.99 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "815f89b0-507d-454c-81fc-b9a111da3425")
-		(property "Reference" "#PWR054"
-			(at 24.13 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+9V"
-			(at 24.13 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 24.13 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 24.13 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+9V\""
-			(at 24.13 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "689972ff-aee4-4ec9-8ca7-650ccd013a0a")
-		)
-		(instances
-			(project "espSFDmains"
-				(path "/b4f72b7f-c57f-4eed-9610-6133338117bb"
-					(reference "#PWR054")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 149.86 121.92 0)
 		(unit 1)
@@ -10856,6 +10507,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:NCP1117-5.0_SOT223")
+		(at 60.96 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "930a6401-3b92-4fac-82b0-d167367b62cb")
+		(property "Reference" "U4"
+			(at 60.96 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NCP1117-5.0_SOT223"
+			(at 60.96 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 60.96 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF"
+			(at 63.5 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1A Low drop-out regulator, Fixed Output 5V, SOT-223"
+			(at 60.96 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7bf7a57f-df9b-4dd3-aa19-9ffe95ea81ac")
+		)
+		(pin "1"
+			(uuid "bed34578-cadb-429e-a6dc-5c7fdf4b4393")
+		)
+		(pin "3"
+			(uuid "df185f57-9b4c-43b0-9656-c268350c651d")
+		)
+		(instances
+			(project ""
+				(path "/b4f72b7f-c57f-4eed-9610-6133338117bb"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+9V")
 		(at 55.88 69.85 270)
 		(unit 1)
@@ -11127,85 +10849,6 @@
 			(project "espSFDmains"
 				(path "/b4f72b7f-c57f-4eed-9610-6133338117bb"
 					(reference "J5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 24.13 177.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9ac3c20d-9263-4ef1-b0bd-774321fc4c9b")
-		(property "Reference" "C7"
-			(at 27.94 175.6409 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "15µF/50V"
-			(at 27.94 178.1809 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-7343-43_Kemet-X"
-			(at 25.0952 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 24.13 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 24.13 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part #" "C2798137"
-			(at 24.13 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "edeb1dfb-26d7-4a9f-aa9d-17387bd38424")
-		)
-		(pin "2"
-			(uuid "3871b4b6-de5f-4e80-b592-4079d9496fba")
-		)
-		(instances
-			(project "espSFDmains"
-				(path "/b4f72b7f-c57f-4eed-9610-6133338117bb"
-					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -11734,151 +11377,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 24.13 181.61 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "abe408a4-4938-4087-9f6b-554b3154670d")
-		(property "Reference" "#PWR053"
-			(at 24.13 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 24.13 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 24.13 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 24.13 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 24.13 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "586a855a-ce84-4afc-b026-eed86f0ebfc3")
-		)
-		(instances
-			(project "espSFDmains"
-				(path "/b4f72b7f-c57f-4eed-9610-6133338117bb"
-					(reference "#PWR053")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 109.22 154.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aef35a0c-2dfc-49ef-adda-9f0940468287")
-		(property "Reference" "C6"
-			(at 113.03 152.7809 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "68µF/16V"
-			(at 113.03 155.3209 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-7343-43_Kemet-X"
-			(at 110.1852 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 109.22 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 109.22 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part #" "C308905"
-			(at 109.22 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cb7679c9-df51-43d8-acc8-40e41cd2e590")
-		)
-		(pin "2"
-			(uuid "e036edf7-2049-41e7-91b9-8a9f9263ee81")
-		)
-		(instances
-			(project "espSFDmains"
-				(path "/b4f72b7f-c57f-4eed-9610-6133338117bb"
-					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 24.13 148.59 0)
 		(mirror y)
 		(unit 1)
@@ -12024,72 +11522,6 @@
 			(project "espSFDmains"
 				(path "/b4f72b7f-c57f-4eed-9610-6133338117bb"
 					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 109.22 158.75 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bd3ae225-60be-4038-b48c-ad5c7d67d5e2")
-		(property "Reference" "#PWR046"
-			(at 109.22 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 109.22 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 109.22 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 109.22 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 109.22 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7ac1ce81-8b70-4e46-be50-88c7f3e2f5d4")
-		)
-		(instances
-			(project "espSFDmains"
-				(path "/b4f72b7f-c57f-4eed-9610-6133338117bb"
-					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -13652,6 +13084,140 @@
 			(project "espSFDmains"
 				(path "/b4f72b7f-c57f-4eed-9610-6133338117bb"
 					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 80.01 116.84 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e7de0ef4-a660-4417-9db7-534cf3bc6003")
+		(property "Reference" "#PWR055"
+			(at 76.2 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 83.82 116.8399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 80.01 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "47d24eb2-67d2-4683-9173-49420a09b2c6")
+		)
+		(instances
+			(project "espSFDmains"
+				(path "/b4f72b7f-c57f-4eed-9610-6133338117bb"
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+9V")
+		(at 53.34 116.84 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ebed588b-57d7-4c5d-9246-59ec4c6699ac")
+		(property "Reference" "#PWR058"
+			(at 57.15 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+9V"
+			(at 49.53 116.8399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+9V\""
+			(at 53.34 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fcc4df0a-bb2f-4bf6-9747-8daec33eca59")
+		)
+		(instances
+			(project "espSFDmains"
+				(path "/b4f72b7f-c57f-4eed-9610-6133338117bb"
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
