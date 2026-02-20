@@ -31,7 +31,22 @@ captive_portal:
 
 # Example configuration entry
 web_server:
+  version: 3
+  local: true
   port: 80
+  sorting_groups:
+    - id: group_content
+      name: "Content"
+      sorting_weight: 0
+    - id: sorting_group_number_settings
+      name: "Number settings"
+      sorting_weight: 20
+
+switch:
+  - platform: gpio
+    pin: GPIO26
+    id: motor_power
+    name: "Motor Power"
 
 uart: # The SFD Modules are sitting together on UART and only work with this settings.
   - id: uart_bus
@@ -45,16 +60,23 @@ sfd_vosloh:
   id: sfd
   uart_id: uart_bus
   row_length: 25
+  last_module: 75
   current_content:
-    name: current content
-  current_c_state:
-    name: current char state
-  current_m_state:
-    name: current motor state
-  last_module:
-    name: last module
+    name: content
+    web_server:
+      sorting_group_id: group_content
+  # current_c_state:
+  #   name: char state
+  # current_m_state:
+  #   name: motor state
   rolling:
     name: rolling
+    on_press:
+      then:
+        - switch.turn_on: motor_power
+    on_release:
+      then:
+        - switch.turn_off: motor_power
 
 time:
   - id: my_time
@@ -65,21 +87,45 @@ time:
       - seconds: 0
         minutes: /1
         then:
-          - lambda: |-
-              std::string text = id(my_time).now().strftime("%d.%m.%Y %H:%M");
-              id(sfd).set_content(text, sfd_vosloh::ALIGN_CENTER, 2);
+          - sfdVosloh.content:
+              id: sfd
+              text: !lambda |-
+                return id(my_time).now().strftime("%d.%m.%Y %H:%M");
+              align: center
+              row: 2
     on_time_sync:
       then:
-        - logger.log: "time_sync"
-        - lambda: |-
-            std::string text = id(my_time).now().strftime("%d.%m.%Y %H:%M");
-            id(sfd).set_content(text, sfd_vosloh::ALIGN_CENTER, 2);
+        - sfdVosloh.content:
+            id: sfd
+            text: !lambda |-
+              return id(my_time).now().strftime("%d.%m.%Y %H:%M");
+            align: center
+            row: 2
+  
+text:
+  - platform: template
+    id: _test
+    name: "Test"
+    mode: text
+    optimistic: true
+    web_server:
+      sorting_group_id: group_content
+    on_value:
+      then:
+        - sfdVosloh.content:
+            id: sfd
+            text: !lambda |-
+              return x.c_str();
+            align: center
+            word_wrap: true
 
 select:
   - platform: template
-    id: text
+    id: _text
     name: "Text"
     optimistic: true
+    web_server:
+      sorting_group_id: group_content
     options:
       - ""
       - "Dieser Text dient zum test der Anzeige.\n Der Zeilenumbruch sollte auch funktionieren."
@@ -87,8 +133,12 @@ select:
       - "Dies ist ein Text zum testen der Anzeige; \n Der Zeilenumbruch sollte auch funktionieren."
     on_value:
       then:
-        - lambda: |-
-            id(sfd).set_content(x, sfd_vosloh::WORD_WRAP | sfd_vosloh::ALIGN_RIGHT);
+        - sfdVosloh.content:
+            id: sfd
+            text: !lambda |-
+              return x.c_str();
+            align: right
+            word_wrap: true
 
 button:
   - platform: restart
@@ -97,19 +147,24 @@ button:
   - platform: template
     name: "go blank"
     on_press:
-      - lambda: |-
-          id(sfd).clear();
+      - sfdVosloh.clear:
+          id: sfd
 
   - platform: template
     name: "roll up"
     on_press:
-      - lambda: |-
-          id(sfd).roll();
+      - sfdVosloh.roll:
+          id: sfd
 
   - platform: template
     id: show_time
     name: "show time"
+    web_server:
+      sorting_group_id: group_content
     on_press:
-      - lambda: |-
-          std::string text = id(my_time).now().strftime("%d.%m.%Y %H:%M");
-          id(sfd).set_content(text, sfd_vosloh::ALIGN_CENTER, 2);
+      - sfdVosloh.content:
+          id: sfd
+          text: !lambda |-
+            return id(my_time).now().strftime("%d.%m.%Y %H:%M");
+          align: center
+          row: 2
