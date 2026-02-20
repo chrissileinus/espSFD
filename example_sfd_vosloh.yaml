@@ -8,14 +8,14 @@ esp32:
     type: arduino
 
 external_components:
-  source: github://chrissileinus/ESPHomeComponent
+  source: github://chrissileinus/espSFD
 
 # Enable logging
 logger:
 
 # Enable Home Assistant API
 api:
-  reboot_timeout: 0s
+  reboot_timeout: 0s  # no Timeout
 
 ota:
 
@@ -48,7 +48,7 @@ switch:
     id: motor_power
     name: "Motor Power"
 
-uart: # The SFD Modules are sitting together on UART and only work with this settings.
+uart: # The UART Bus with the SFD Modules.
   - id: uart_bus
     tx_pin: 17
     rx_pin: 16
